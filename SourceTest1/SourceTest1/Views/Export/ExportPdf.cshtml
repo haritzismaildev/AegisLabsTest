@@ -1,0 +1,51 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Export PDF</title>
+    <style>
+        /* Tambahkan styling sesuai kebutuhan */
+        body { font-family: Arial, sans-serif; }
+        h1 { color: #333; }
+        table { border-collapse: collapse; width: 100%; }
+        table, th, td { border: 1px solid #ccc; }
+        th, td { padding: 8px; text-align: left; }
+        .export-buttons {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .export-buttons a {
+         padding: 10px 15px;
+         margin: 5px;
+         display: inline-block;
+         border-radius: 5px;
+         text-decoration: none;
+         }
+    </style>
+</head>
+<body>
+    <h1>Data Export PDF</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nama</th>
+                <th>Tanggal</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Haritz</td>
+                <td>@DateTime.Now.ToString("dd-MM-yyyy")</td>
+            </tr>
+            <!-- Tambahkan data lain jika diperlukan -->
+        </tbody>
+    </table>
+</body>
+</html>
